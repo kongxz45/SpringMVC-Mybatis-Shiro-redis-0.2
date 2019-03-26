@@ -83,6 +83,7 @@ public class UserCoreController extends BaseController {
 		if("admin".equals(email)){
 			resultMap.put("status", 300);
 			resultMap.put("message", "管理员不准修改密码。");
+			System.out.println("管理员不准修改密码");
 			return resultMap;
 		}
 		
